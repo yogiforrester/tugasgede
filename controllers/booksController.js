@@ -3,8 +3,8 @@ const Kategory = require('../models/Kategory.js')
 const Katalogku = require('../models/Katalogku.js')
 const fs = require('fs')
 
-books.belongsTo(kategory)
-books.belongsTo(katalogku)
+books.belongsTo(category)
+books.belongsTo(catalog)
 
 module.exports.getAllBooks = (req, res) => {
     books.findAll().then((books) => {

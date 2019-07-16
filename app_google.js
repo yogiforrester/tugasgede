@@ -17,6 +17,6 @@ app.use(koneksi_facebook);
 
 app.listen(4000, ()=>
 {
-    console.log("server berjalan");
+    console.log("Server Aktiv");
 });
 

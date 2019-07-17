@@ -2,7 +2,6 @@
   "name": "tugasku",
   "version": "1.0.0",
   "description": "Toko buku online",
-  
   "main": "app.js",
   "scripts": {
     "test": "Kelompok 8",

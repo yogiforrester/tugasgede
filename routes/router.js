@@ -12,7 +12,7 @@ Baris Ini diisi oleh instansiasi model
 //Masuk Ke Koding Router
 
 app.get('/', (req, res) => {
-    res.render('index.nj')
+    res.render('index')
 })
 
 app.get('/customer', auth.verifyToken, customerController.getIndexCustomer)

@@ -32,7 +32,7 @@ nunjucks.configure('views', {
 
 app.use(router)
 
-app.listen(port, () => {
+app.listen(3000, () => {
     console.log(`Server aktif di port 3000`)
     sequelize.sync()
     // sequlize.authenticate().then(() => {

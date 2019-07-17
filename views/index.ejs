@@ -1,5 +1,5 @@
 <% if (!user) { %>
-	<h2>Selamat Datang! Please <a href="/login">log in</a>.</h2>
+	<h2>Selamat Datang<a href="/login">Masuk</a>.</h2>
 <% } else { %>
-	<h2>Hello, <%= user.displayName %>.</h2>
+	<h2>Selamat Anda Berhasil Masuk <%= user.displayName %>.</h2>
 <% } %>

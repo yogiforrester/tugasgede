@@ -1,6 +1,6 @@
 const books = require('../models/books.js')
-const Kategory = require('../models/Kategory.js')
-const Katalogku = require('../models/Katalogku.js')
+const category = require('../models/Kategory.js')
+const catalog = require('../models/Katalogku.js')
 const fs = require('fs')
 
 books.belongsTo(category)

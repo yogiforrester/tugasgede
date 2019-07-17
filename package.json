@@ -2,9 +2,11 @@
   "name": "tugasku",
   "version": "1.0.0",
   "description": "Toko buku online",
+  
   "main": "app.js",
   "scripts": {
-    "test": "Kelompok 8"
+    "test": "Kelompok 8",
+    "start": "nodemon app.js"
   },
   "keywords": [
     "toko",

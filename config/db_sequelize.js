@@ -5,6 +5,6 @@ const sequelize = new Sequelize('IF3_kelompok8_tokobukuku', 'root', '', {
     dialect: 'mysql'
   });
   
-  module.exports = sequelize;
+  module.exports = sequelizes;
 
 

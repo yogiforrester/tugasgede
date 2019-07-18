@@ -1,5 +1,6 @@
-<% if (!user) { %>
-	<h2>Selamat Datang<a href="/login">Masuk</a>.</h2>
-<% } else { %>
-	<h2>Selamat Anda Berhasil Masuk <%= user.displayName %>.</h2>
-<% } %>
+<% include ../partials/header %>
+
+
+<h1>Books Store</h1>
+
+<% include ../partials/footer %>

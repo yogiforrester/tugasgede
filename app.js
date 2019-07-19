@@ -30,6 +30,6 @@ app.use(router)
 
 app.listen(port, () => {
     console.log(`Server aktif di port 2020`)
-     sequelize.sync()
+   //  sequelize.sync()
    
 })

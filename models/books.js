@@ -9,10 +9,11 @@ Book.init({
 	pengarang: Sequelize.STRING,
 	penerbit: Sequelize.STRING,
 	jumlah_hal: Sequelize.STRING,
-	gambar: Sequelize.BLOB,
 	harga: Sequelize.INTEGER,
 	deskripsi_buku: Sequelize.STRING,
-	tanggal_rilis: Sequelize.DATE
+	tanggal_rilis: Sequelize.DATE,
+	category_name: Sequelize.STRING,
+	categoryId: Sequelize.INTEGER
 }, {
 	sequelize,
 	modelName: 'book'

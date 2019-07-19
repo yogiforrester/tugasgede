@@ -8,7 +8,7 @@ module.exports.getAllCategory = (req, res) => {
 
 module.exports.createCategory = (req, res) => {
     category.create({
-        name_category: req.body.nama
+        category_name: req.body.category_name
     }).then((category) => {
         res.json(category);
     })
@@ -17,12 +17,12 @@ module.exports.createCategory = (req, res) => {
 module.exports.updateCategory = (req, res) => {
     category.findOne({
         where: {
-            id: req.body.id
+            id: req.params.id
         }
     }).then((category) => {
         if (category) {
             category.update({
-                name_category: req.body.nama
+                category_name: req.body.category_name
             }).then((category) => {
                 res.json(category)
             })
@@ -33,7 +33,7 @@ module.exports.updateCategory = (req, res) => {
 module.exports.deleteCategory = (req, res) => {
     category.destroy({
         where: {
-            id: req.body.id
+            id: req.params.id
         }
     }).then((category) => {
         res.json(category)

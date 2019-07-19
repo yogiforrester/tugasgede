@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('IF3_kelompok8_bukuku', 'root', '', {
+const sequelize = new Sequelizes('IF3_kelompok8_tokobukuku', 'root', '', {
     host: 'localhost',
     dialect: 'mysql'
   });
   
-  module.exports = sequelize;
+  module.exports = sequelizes;
 
 

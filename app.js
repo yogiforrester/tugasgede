@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const router = require('./routes/router')
 const sequelize = require('./config/db_sequelize.js')
-const nunjucks = require('nunjucks')
+
 
 app.use(
     bodyParser.urlencoded({
@@ -25,19 +25,12 @@ app.use(bodyParser.json())
 
 //app.set('view engine', 'ejs')
 
-nunjucks.configure('views', {
-    autoescape: true,
-    express: app
-})
+
 
 app.use(router)
 
 app.listen(3000, () => {
     console.log(`Server aktif di port 3000`)
     sequelize.sync()
-    // sequlize.authenticate().then(() => {
-    //     console.log('Connection has been established')
-    // }).catch(err => {
-    //     console.log('Unable to connect to database', err)
-    // })
+   
 })

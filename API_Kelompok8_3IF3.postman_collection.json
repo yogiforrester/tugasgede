@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "53336870-e036-456f-adb8-d17df0e10bcc",
+		"name": "API_Kelompok8_3IF3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pesan Buku",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZXMiOiJ1c2VyIiwiaWF0IjoxNTYzNDc0ODUyfQ.Hj_9WVUAiTgs50XcRv9uxPs4xuO4V3fLdMVe322Gqyc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"bookId\" :1\n}"
+				},
+				"url": {
+					"raw": "localhost:2020/pesan",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"pesan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"irwannurpadilah@gmail.com\",\n\t\"password\": \"12345678\"\n}"
+				},
+				"url": {
+					"raw": "localhost:2020/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lihat Pesanan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2020/listPesanan",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"listPesanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"bapaku\",\n\t\"email\": \"bapabapa@gmail.com\",\n\t\"password\": \"12345678\",\n\t\"roles\": \"user\"\n}"
+				},
+				"url": {
+					"raw": "localhost:2020/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mencari Buku",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:2020/books/findbuku/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"books",
+						"findbuku",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah  Buku",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZXMiOiJhZG1pbiIsImlhdCI6MTU2MzQ3Njk3MH0.hhhv2iBOvWen1Y06B-_SWz8MryNhtQCRZwVg_a_rMGA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"judul_buku\": \"Maling Kundang\",\n\t\"pengarang\": \"Dayang sumbi\",\n\t\"penerbit\": \"Tribun jabar\",\n\t\"jumlah_hal\": \"400\",\n\t\"harga\": 100000,\n\t\"deskripsi_buku\": \"Cerita dahulu\",\n\t\"tanggal_rilis\": \"22-03-2019\",\n\t\"category_name\": \"Fiksi\"\n}"
+				},
+				"url": {
+					"raw": "localhost:2020/books/create",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"books",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Buku",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "brearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZXMiOiJhZG1pbiIsImlhdCI6MTU2MzQ3Njk3MH0.hhhv2iBOvWen1Y06B-_SWz8MryNhtQCRZwVg_a_rMGA ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"judul_buku\": \"Maling Kundang\",\n\t\"pengarang\": \"Dayang sumbi\",\n\t\"penerbit\": \"Tribun jabar\",\n\t\"jumlah_hal\": \"400\",\n\t\"harga\": 100000,\n\t\"deskripsi_buku\": \"Cerita dahulu Kala\",\n\t\"tanggal_rilis\": \"03-03-2019\",\n\t\"category_name\": \"Fiksi\",\n\t\"categoryId\": 2\n}"
+				},
+				"url": {
+					"raw": "localhost:2020/books/update/3",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"books",
+						"update",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Buku",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "brearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZXMiOiJhZG1pbiIsImlhdCI6MTU2MzQ3Njk3MH0.hhhv2iBOvWen1Y06B-_SWz8MryNhtQCRZwVg_a_rMGA ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:2020/books/delete/3",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"books",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cari Buku ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:2020/books/findbuku/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"books",
+						"findbuku",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah Kategori Buku",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Proxy-Authorization",
+						"value": "brearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZXMiOiJhZG1pbiIsImlhdCI6MTU2MzQ3Njk3MH0.hhhv2iBOvWen1Y06B-_SWz8MryNhtQCRZwVg_a_rMGA ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"category_name\": \"Novel\"\n}"
+				},
+				"url": {
+					"raw": "localhost:2020/category/create",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"category",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Kategori Buku",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Kategori Buku",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "brearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZXMiOiJhZG1pbiIsImlhdCI6MTU2MzQ3Njk3MH0.hhhv2iBOvWen1Y06B-_SWz8MryNhtQCRZwVg_a_rMGA ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:2020/books/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2020",
+					"path": [
+						"books",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Menampilkan Buku Yang Di jual",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}

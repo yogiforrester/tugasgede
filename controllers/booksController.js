@@ -1,12 +1,11 @@
 const books = require('../models/books.js')
 const kategory = require('../models/Kategory.js')
-const Katalogku = require('../models/Katalogku.js')
 const fs = require('fs')
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 
 dotenv.config();
-books.belongsTo(Kategory)
+books.belongsTo(kategory)
 
 module.exports.getAllBooks = (req, res) => {
     books.findAll().then((books) => {

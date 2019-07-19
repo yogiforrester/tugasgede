@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 2020
 const bodyParser = require('body-parser')
 const path = require('path')
 const router = require('./routes/router')
@@ -22,15 +22,14 @@ app.use(
 )
 
 app.use(bodyParser.json())
-
-//app.set('view engine', 'ejs')
+app.set('view engine', 'ejs')
 
 
 
 app.use(router)
 
-app.listen(3000, () => {
-    console.log(`Server aktif di port 3000`)
-    sequelize.sync()
+app.listen(port, () => {
+    console.log(`Server aktif di port 2020`)
+     sequelize.sync()
    
 })

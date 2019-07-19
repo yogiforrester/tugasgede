@@ -1,13 +1,13 @@
 const Sequelize = require('sequelize')
 const sequelize = require('../config/db_sequelize.js')
 
-class Kategory extends Sequelize.Model {}
+class kategory extends Sequelize.Model {}
 
-Kategory.init({
+kategory.init({
     category_name: Sequelize.STRING,
 }, {
     sequelize,
     modelName: 'category'
 })
 
-module.exports = Kategory
+module.exports = kategory

@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const User = require('../models/User');
+const User = require('../models/user');
 
 module.exports.postRegister = (req, res) => {
 	var salt = bcrypt.genSaltSync(10);

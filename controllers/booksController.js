@@ -1,5 +1,5 @@
 const books = require('../models/books.js')
-const kategory = require('../models/Kategory.js')
+const kategory = require('../models/kategory.js')
 const fs = require('fs')
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');

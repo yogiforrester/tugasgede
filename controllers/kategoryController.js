@@ -1,4 +1,4 @@
-const category = require('../models/kategory.js')
+const category = require('../models/Kategory.js')
 
 module.exports.getAllCategory = (req, res) => {
     category.findAll().then((category) => {
